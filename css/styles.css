@@ -1,2 +1,110 @@
 /*font-family: 'Montserrat', sans-serif;*/
 /*font-family: 'Playfair Display', serif;*/
+
+:root {
+  --light-gray: #f5f5f5;
+  --dark-gray: #11120d;
+  --yellow-mustage: #e0c141;
+}
+
+/*---------------------------------*/
+/* TO DO - LOS MARGENES SE MONTAN  */
+/*---------------------------------*/
+
+* {
+  margin: 0;
+  padding: 0;
+  /*box-sizing: border-box !important;*/
+}
+
+html {
+  font-size: 62.5%; /* 1 rem = 10px*/
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: var(--light-gray);
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 4rem;
+  margin-bottom: 0;
+}
+
+h2 {
+  font-size: 2.7rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+
+/*-------------- NAVBAR -------------*/
+#navbar {
+  height: 20px;
+}
+/*-------------- NAVBAR END -------------*/
+
+/*-------------- HEADER -------------*/
+main > header > div > img {
+  width: 220px;
+  border-radius: 50%;
+  border: solid 3px var(--yellow-mustage);
+  padding: 10px;
+}
+
+main > header > div:nth-child(2) > hr {
+  width: 90%;
+  margin: 0 auto 10px auto;
+  border-top: solid 3px var(--yellow-mustage);
+  opacity: 100;
+}
+/*-------------- HEADER END -------------*/
+
+/*-------------- SOCIAL ICONS -------------*/
+#social-icons > div {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#social-icons > div > article > a > i {
+  font-size: 3rem;
+  color: var(--dark-gray);
+}
+/*-------------- SOCIAL ICONS END -------------*/
+
+/*-------------- FOOTER -------------*/
+.custom-bg-dark {
+  background-color: var(--dark-gray);
+}
+
+footer {
+  border-top: solid 3px var(--yellow-mustage);
+}
+
+footer > p {
+  color: var(--light-gray);
+  font-size: 1.5rem;
+  margin: 20px 0;
+}
+
+footer > p > a {
+  color: var(--yellow-mustage);
+  text-decoration: none;
+  font-weight: 600;
+}
+/*-------------- FOOTER END -------------*/
