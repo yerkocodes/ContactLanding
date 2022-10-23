@@ -61,15 +61,18 @@ h3 {
 /*-------------- NAVBAR END -------------*/
 
 /*-------------- HEADER -------------*/
-main > header > div > img {
-  /*width: 220px;*/
+main > #containerHeader > div > img {
   width: 60%;
   border-radius: 50%;
   border: solid 3px var(--yellow-mustage);
   padding: 10px;
 }
 
-main > header > div:nth-child(2) > hr {
+main > #containerPresentation > #containerPresentationName {
+  text-align: center;
+}
+
+main > #containerPresentation > #containerPresentationName > hr {
   width: 90%;
   margin: 0 auto 10px auto;
   border-top: solid 3px var(--yellow-mustage);
@@ -78,12 +81,13 @@ main > header > div:nth-child(2) > hr {
 /*-------------- HEADER END -------------*/
 
 /*-------------- SOCIAL ICONS -------------*/
-#social-icons > div {
+main > #containerPresentation > #containerPresentationSocialIcons > div {
   display: flex;
   justify-content: space-evenly;
 }
 
-#social-icons > div > article > a > i {
+/*#social-icons > div > article > a > i {*/
+main > #containerPresentation > #containerPresentationSocialIcons > div > article > a > i {
   font-size: 3rem;
   color: var(--dark-gray);
 }
@@ -110,3 +114,53 @@ footer > p > a {
   font-weight: 600;
 }
 /*-------------- FOOTER END -------------*/
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 1200px) {
+  main {
+
+  }
+
+  /*HEADER IMG*/
+  main > #containerHeader > div > img {
+    width: 100%;
+    border-radius: 0;
+    border: solid 3px var(--yellow-mustage);
+    padding: 10px;
+  }
+
+  /*HEADER TITLE*/
+  main > #containerPresentation > #containerPresentationName {
+    text-align: left;
+  }
+
+  main > #containerPresentation > #containerPresentationName > h1 {
+    font-size: 5rem;
+  }
+
+  /*HEADER HR DIVIDER*/
+  main > #containerPresentation > #containerPresentationName > hr {
+    width: 90%;
+    margin: 0 auto 10px 0;
+    border-top: solid 3px var(--yellow-mustage);
+    opacity: 100;
+  }
+
+  /*SOCIAL ICONS*/
+  main > #containerPresentation > #containerPresentationSocialIcons > p {
+    text-align: left;
+  }
+
+  main > #containerPresentation > #containerPresentationSocialIcons > div {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  main > #containerPresentation > #containerPresentationSocialIcons > div > article > a > i {
+    font-size: 3rem;
+    color: var(--dark-gray);
+    margin-right: 30px;
+  }
+}
+
